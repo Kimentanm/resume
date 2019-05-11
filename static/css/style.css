@@ -230,11 +230,11 @@ progress::-moz-progress-value {
 }
 
 .info-header:hover {
-    background-color: #d4dee4;
+    background-color: transparent;
 }
 
 .info-unit ul li:hover {
-    background-color: #d4dee4;
+    background-color: transparent;
 }
 
 .info-header .unit-remove {
