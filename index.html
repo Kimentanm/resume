@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简历生成器</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" style="height: 100%" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait" style="background-image: url('http://img.kimen.xyz/personal.jpg');"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username">Java工程师</h1>
+                <h4 id="persona-tag">Java / Android / Vue.js</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">汤金梦</span></li>
+                    <li>
+                        <label class="left-label">性别</label><span class="label-value">男</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
+                    <li>
+                        <label class="left-label">毕业院校</label><span class="label-value">淮北师范大学</span></li>
+                    <li>
+                        <label class="left-label">专业</label><span class="label-value">网络工程</span></li>
+                    <li>
+                        <label class="left-label">毕业年份</label><span class="label-value">2018</span></li>
+                    <li>
+                        <label class="left-label">工作年限</label><span class="label-value">2年</span></li>
+                    <li>
+                        <label class="left-label">目前城市</label><span class="label-value">江苏省苏州市</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">手机</label><span class="label-value">17372830063</span></li>
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">Kimentanm@gmail.com</span></li>
+                    <li>
+                        <label class="left-label">个人主页</label><span class="label-value">kimen.xyz</span></li>
+                    <li>
+                        <label class="left-label">Github</label><span class="label-value">github.com/Kimentanm</span></li>
+                </ul>
+            </div>
+            <div class="skill info-unit">
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
+                <hr>
+                <ul class="progress-list">
+                    <li>
+                        <label class="left-label">Java</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Vue.js</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Android</label>
+                        <progress value="50" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">kotlin</label>
+                        <progress value="35" max="100"></progress>
+                    </li>
+                </ul>
+            </div>
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">前端</label><span class="label-value">Vue,js、Angular.js、Android</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">后端</label><span class="label-value">Java EE、Kotlin、MyBatis、Netty、Spring、MySQL</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">其它</label><span class="label-value">git、maven、Node.js、electron</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">常用IDE</label><span class="label-value">Intellij IDEA、WebStorm、Android Studio</span></li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="code info-unit">
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
+                <hr>
+                <div class="weixin">
+                    <img src="http://img.kimen.xyz/wx_qrcode.png" alt="">
+                </div>
+            </div>
+            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br/>
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>淮北师范大学 - 网络工程专业（本科）2014-2018</h3>
+                        <p>
+                            主修课程：C语言、C++、Java、Java网络编程、数据库、数据结构、数字逻辑、计算机组成原理等
+                            <br />
+                            专业排名：1%-5%
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">校内经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>2016.04 - 2017.04 共青团淮北师范大学计算机科学与技术 学院委员会 副书记</h3>
+                        <p>1、负责协同团委书记管理班级团支部、学生会、社团协会</p>
+                        <p>2、负责协同团委书记处理学生工作</p>
+                        <p>3、协助运营了迎新生等学院内部大大小小的活动以及校外各 种A类B类学科竞赛</p>
+                    </li>
+                    <li>
+                        <h3>2014.09 - 2018.07 淮北师范大学计算机科学院技术学院2014级 网路工程班 团支部书记</h3>
+                        <p>主要负责班级活动的策划与举办，处理班级党团工作</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>2018.06 安徽省优秀毕业生</h3>
+                    </li>
+                    <li>
+                        <h3>2017.11 国家奖学金</h3>
+                    </li>
+                    <li>
+                        <h3>2017.08 全国大学生计算机设计大赛软件应用与开发类国家 二等奖</h3>
+                    </li>
+                    <li>
+                        <h3>2017.05 优秀共青团干部</h3>
+                    </li>
+                    <li>
+                        <h3>2017.05 安徽省十佳大学生提名奖</h3>
+                    </li>
+                    <li>
+                        <h3>2016.11 2015-2016学年度三好学生</h3>
+                    </li>
+                    <li>
+                        <h3>2016.11 2015-2016学年度优秀学生干部</h3>
+                    </li>
+                    <li>
+                        <h3>2015.11 国家励志奖学金</h3>
+                    </li>
+                    <li>
+                        <h3>2015.08 淮北师范大学“互联网+”大学生创新创业大赛优秀奖</h3>
+                    </li>
+                    <li>
+                        <h3>2015.03 全国计算机等级考试二级合格证书</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>苏州智软科创网络技术有限公司－Java工程师 (2017.11 - 至今)</h3>
+                        <p>负责公司产品前台页面编写、后台软件开发、移动端软件开发等工作。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">企业项目</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>上海小学教育平台</h3>
+                        <p>
+
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>农场产品条码追溯平台</h3>
+                        <p>
+
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>面源污染数据分析平台</h3>
+                        <p>
+
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>交通大数据展示平台-前端大屏页面</h3>
+                        <p>
+
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>智能洗衣平台</h3>
+                        <p>
+
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>储能监控大数据平台</h3>
+                        <p>
+
+                            <br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>基于web的新闻发布系统的开发与设计</h3>
+                        <p>
+
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>基于web的聊天室的设计与实现（毕业设计）</h3>
+                        <p>
+
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>京东帮物流智能排车App</h3>
+                        <p>
+
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>掌控淮师-移动智慧校园服务平台</h3>
+                        <p>
+
+                            <br/>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <hr>
+                <p>
+                    本人勤奋努力、虚心好学、积极上进， 具备较强的自学能力，工作热情积极， 有很强的组织协调能力,勤恳踏实，认真负责，具有较高的敬业精神。性格爽朗，率直、坦诚、乐观，吃苦耐劳，具有团队协作精神、奉献精神和较强的工作能力和社会适应性，有良好的人际交 往能力。在生活中能更好的把握自己的时间，充分发挥自己的能量，给大家带 来积极乐观的环境。相信自己，喜欢做一些具有挑战性的事情。遇到困难能以 积极乐观的态度去面对，去克服，勇不服输。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
