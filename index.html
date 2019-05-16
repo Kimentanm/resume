@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
-    <script src="static/js/script.js"></script>
+    <!--<script src="static/js/script.js"></script>-->
+    <style>
+        .proj-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,7 +46,7 @@
                     <li>
                         <label class="left-label">毕业年份</label><span class="label-value">2018</span></li>
                     <li>
-                        <label class="left-label">工作年限</label><span class="label-value">2年</span></li>
+                        <label class="left-label">参加工作时间</label><span class="label-value">2017.11</span></li>
                     <li>
                         <label class="left-label">目前城市</label><span class="label-value">江苏省苏州市</span></li>
                 </ul>
@@ -50,9 +60,9 @@
                     <li>
                         <label class="left-label">邮箱</label><span class="label-value">Kimentanm@gmail.com</span></li>
                     <li>
-                        <label class="left-label">个人主页</label><span class="label-value">kimen.xyz</span></li>
+                        <label class="left-label">个人主页</label><a href="https://www.kimen.xyz" target=”_blank” class="label-value">www.kimen.xyz</a></li>
                     <li>
-                        <label class="left-label">Github</label><span class="label-value">github.com/Kimentanm</span></li>
+                        <label class="left-label">Github</label><a href="https://github.com/Kimentanm" target=”_blank” class="label-value">github.com/Kimentanm</a></li>
                 </ul>
             </div>
             <div class="skill info-unit">
@@ -194,22 +204,23 @@
                     <li>
                         <h3>农场产品条码追溯平台</h3>
                         <p>
-                            项目描述：<br/>
+                            <span class="proj-title">项目描述：</span><br/>
                             农产品生产时分配其专属的二维码，在生产包装过程中录入信息，消费者在获得商品时可通过扫描二维追溯到该商品的生产时间、生产地点等重要信息。<br/><br/>
-                            项目架构：<br/>
-                            分为后台管理端和手持二维码扫描PDA的Android前端，后台采用SpringBoot+Mybatis+Mysql和SqlServer的多数据源架构，Web前端页面采用Vue.js开发，包括箱码打印、箱码管理、员工管理、业务数据管理等内容。Android端采用Kotlin语言编写，包括追溯、查询、质量管理等功能<br/><br/>
-                            主要负责内容：<br/>
-                            1、PDA手持扫码工具的Android端全部内容<br/>
+                            <span class="proj-title">项目架构：</span><br/>
+                            分为后台管理端和手持二维码扫描PDA的Android前端，后台采用SpringBoot+Mybatis+Mysql和SqlServer的多数据源架构，Web前端页面采用Vue.js开发，包括箱码打印、箱码管理、员工管理、业务数据管理等内容。Android端采用Kotlin语言编写，使用MVP架构，包括追溯、查询、质量管理等功能<br/><br/>
+                            <span class="proj-title">主要负责内容：</span><br/>
+                            1、主要负责平台中使用的工业级手持PDA设备上的Android软件的编写<br/>
                             2、负责后端与企业原本的ERP系统的交互，包括定期更新员工信息，推送产品入库出库信息等功能<br/>
+                            3、通过无线局域网实现PDA与打印机的交互<br/>
                         </p>
                     </li>
                     <li>
                         <h3>上海小学教育平台（老项目维护）</h3>
                         <p>
-                            项目描述：<br/>
+                            <span class="proj-title">项目描述：</span><br/>
                             基于SpringMVC+JSP+JdbcTemplate的教学管理平台，包括学生端、教师端、校管端、管理端、微信端五个部分
                             <br/><br/>
-                            主要负责内容：<br/>
+                            <span class="proj-title">主要负责内容：</span><br/>
                             1、教师端与成绩上报、纠错、删除审核流程相关功能<br/>
                             2、数据审核DashBoard、审核功能<br/>
                         </p>
@@ -217,52 +228,52 @@
                     <li>
                         <h3>污染数据分析平台</h3>
                         <p>
-                            项目描述：<br/>
+                            <span class="proj-title">项目描述：</span><br/>
                             基于高德地图和Echarts的数据展示平台，实现查看各个省市区在不同污染源、不同年份下的污染程度，以及以图表实现在线对比不同城市的污染程度和以地图实现在线对比不同城市的污染程度<br/><br/>
-                            项目架构：<br/>
+                            <span class="proj-title">项目架构：</span><br/>
                             后台采用SpringBoot+Mybatis+Mysql和SqlServer的多数据源架构，Web前端页面采用Vue.js开发<br/><br/>
-                            主要负责内容：<br/>
+                            <span class="proj-title">主要负责内容：</span><br/>
                             1、污染数据展示大屏页面，前端+后端，根据选择的污染源和年份的不同处理数据并在高德地图中以区域或点阵的形式展现污染数据<br/>
                             2、Echarts实现地图对比污染页面，前端+后端，根据选择的污染源和年份将不同省市区以块状地图的形式展示在页面上，用于对比污染程度<br/>
-                            <br/>
                         </p>
                     </li>
                     <li>
                         <h3>交通大数据展示平台-前端大屏页面</h3>
                         <p>
-                            项目描述：<br/>
+                            <span class="proj-title">项目描述：</span><br/>
                             交通监控大数据展示平台，<br/><br/>
-                            项目架构：<br/>
+                            <span class="proj-title">项目架构：</span><br/>
                             该项目暂无后台，纯前端静态页面，共有四个页面，均采用Echarts作为数据报表，以及使用高德地图和ArcGIS实现交通大屏地图监控<br/><br/>
-                            主要负责内容：<br/>
+                            <span class="proj-title">主要负责内容：</span><br/>
                             本人主要负责本项目的全部内容，包括四个页面将近20多个Echarts图表，以及三个地图展示<br/>
-                            <br/>
                         </p>
                     </li>
                     <li>
                         <h3>智能洗衣平台</h3>
                         <p>
-                            项目描述：<br/>
-                            <br/><br/>
-                            项目架构：<br/>
-                            <br/><br/>
-                            主要负责内容：<br/>
-                            <br/>
-                            <br/>
-                            <br/>
+                            <span class="proj-title">项目描述：</span><br/>
+                            该项目包括Web管理端、微信端、智能柜三个部分，管理员通过管理端管理商品、管理订单、处理订单入库出库等操作；用户通过微信端选择衣物进行下单，下单时可选择上门取件或者自助将衣服放入智能柜中，配送员取好衣物后会送到洗衣工程进行洗衣<br/><br/>
+                            <span class="proj-title">项目架构：</span><br/>
+                            管理端后台采用SpringBoot+MyBatis+MySQL的架构，管理端前台页面使用Vue.js框架。微信端使用Vue.js框架+VUX移动端组件库。智能柜后台采用的是Netty框架与管理端后台保持长连接，智能柜的后台与前台通过WebSocket保持长连接，前台使用Electron框架编写Windows端桌面程序<br/><br/>
+                            <span class="proj-title">主要负责内容：</span><br/>
+                            1、主要负责平台中智能柜大屏上的页面编写和后台程序开发<br/>
+                            2、通过Netty实现远程主动开柜、远程更新智能柜端程序和资源、微信扫码登录<br/>
+                            3、采用面向串口编程，配合智能柜硬件实现开柜功能<br/>
                         </p>
                     </li>
                     <li>
                         <h3>储能监控大数据平台</h3>
                         <p>
-                            项目描述：<br/>
-                            <br/><br/>
-                            项目架构：<br/>
-                            <br/><br/>
-                            主要负责内容：<br/>
-                            <br/>
-                            <br/>
-                            <br/>
+                            <span class="proj-title">项目描述：</span><br/>
+                            该项目包括电池数据异常监控、电站管理、电表设备管理、策略管理等功能，企业可通过该平台查询到当前已部署电站的电池运行状态，对历史运行数据的查询，当有电池数据不正常时，会通过短信和邮件的形式通知管理员<br/><br/>
+                            <span class="proj-title">项目架构：</span><br/>
+                            该项目的前台采用Vue.js框架开发，后台分为管理端、分析端、数据存储端，端与端之间采用feign互相调用。三段均采用SpringBoot+MyBatis+MySQL的架构形式，数据存储端采用Sharding-JDBC分库分表，使用Kafka获取大量的电池数据<br/><br/>
+                            <span class="proj-title">主要负责内容：</span><br/>
+                            1、负责平台的系统管理功能中的用户管理、角色管理、编码组管理的前台页面及后台功能实现<br/>
+                            2、负责平台的策略审核流程中的策略审核、策略配置、审核历史记录展示的前台页面及后台功能能实现<br/>
+                            3、负责平台的报警计划中的报警展示以及报警通知功能的前台页面及后台功能实现<br/>
+                            4、负责平台的监控大屏大数据可视化页面的编写，包括各种图表、地图等<br/>
+                            5、负责平台定时任务模块的开发和管理<br/>
                         </p>
                     </li>
                 </ul>
@@ -273,66 +284,90 @@
                 <ul class="experience-list">
                     <li>
                         <h3>基于web的新闻发布系统的开发与设计</h3>
+                        <p><span class="proj-title">项目源码：</span><br/><a href="https://github.com/Kimentanm/news-release" target="_blank">https://github.com/Kimentanm/news-release</a></p>
+                        <p><span class="proj-title">在线访问：</span><a href="https://www.kimen.xyz/news-release" target="_blank">https://www.kimen.xyz/news-release</a></p>
+                        <br/>
                         <p>
-                            项目描述：<br/>
+                            <span class="proj-title">项目描述：</span><br/>
+                            本项目的主要内容在于如何通过Web浏览器实现方便快捷的对新闻的预览、管理及发布，以及实现移动端在线查看新闻<br/><br/>
+                            <span class="proj-title">项目架构：</span><br/>
+                            本项目后台采用Java语言开发；
+                            使用SpringBoot框架对整个项目进行架构，简化应用的搭建及开发；
+                            使用Mybatis持久层框架实现后台与数据库的交互；
+                            使用TKmybatis框架简化开发流程；
+                            使用PageHelper框架实现分页功能；
+                            使用Maven工具管理第三方jar包依赖；
+                            使用Git版本控制工具和Github网站提供的Git远程仓库做代码的集中管理。
+                            本项目前端使用Vue.js轻量级前端框架开发；
+                            使用Node.js的npm库对前端进行依赖管理；
+                            使用vue-cropper插件实现对图片的裁剪；
+                            使用tinymce插件实现富文本编辑；
+                            使用使用iview构建PC端页面；
+                            使用vant构建移动端页面
+                            该项目共包含新闻管理、新闻编辑、新闻预览、移动端新闻浏览、用户管理、角色管理、个人中心七个功能模块
                             <br/><br/>
-                            项目架构：<br/>
-                            <br/><br/>
-                            主要负责内容：<br/>
-                            <br/>
-                            <br/>
-                            <br/>
+                            <span class="proj-title">主要负责内容：</span><br/>
+                            1、新闻管理：实现对新闻的分类管理、添加新闻、编辑新闻、删除新闻、根据新闻标题搜索新闻<br/>
+                            2、富文本编辑：新闻正文支持富文本编辑以及支持word文档直接复制<br/>
+                            3、实时一比一预览：新闻编辑页面支持正文输入即预览，预览页面与实际发布后用户所看的移动页面一样<br/>
+                            4、新闻预览：新闻管理页面支持直接预览新闻，无需点击编辑新闻进入新闻详情页观看新闻预览页<br/>
+                            5、移动端新闻浏览：用户在浏览器中输入指定链接后，即可访问已发布的新闻<br/>
+                            6、用户登录：用户通过用户名和密码登录系统<br/>
+                            7、用户登出：用户登出后将清除Cookie、清除Token<br/>
+                            8、用户信息添加、删除、修改：当前系统不支持注册，但是支持超级管理员手动添加、删除以及修改用户信息，支持对用户的权限进行分配<br/>
+                            9、角色管理：当前系统中共有两种角色：超级管理员以及新闻管理员<br/>
+                            10、分配权限：即权限管理，超级管理员可以看到系统管理菜单，而新闻管理员只能看到新闻管理的菜单<br/>
+                            11、修改基本信息：支持非超级管理员用户对自己的基本信息进行修改，包括登录名、用户姓名、联系方式、电子邮箱、登录密码<br/>
+                            12、修改头像：支持非超级管理员用户修改自己的头像，支持对头像进行裁剪<br/>
                         </p>
                     </li>
                     <li>
                         <h3>基于web的聊天室的设计与实现（毕业设计）</h3>
+                        <p><span class="proj-title">项目源码：</span><a href="https://github.com/Kimentanm/WebChat" target="_blank">https://github.com/Kimentanm/WebChat</a></p>
+                        <p><span class="proj-title">在线访问：</span><a href="https://www.kimen.xyz/web-chat" target="_blank">https://www.kimen.xyz/web-chat</a></p>
+                        <br/>
                         <p>
-                            项目描述：<br/>
+                            <span class="proj-title">项目描述：</span><br/>
+                            本项目是一个通过HTTP协议和Websocket协议实现的点对点实时数据传输的Web APP<br/><br/>
+                            <span class="proj-title">项目架构：</span><br/>
+                            后台使用Java语言开发；使用SpringBoot+Mybatis框架集对整个项目进行架构；使用Maven管理整个项目的第三方jar包依赖；使用git版本控制工具和Coding网站提供的Git远程仓库对代码做集中管理。
+                            前台使用Vue.js轻量级前端框架开发；使用Node.js的npm库对前端进行依赖管理；使用vue-stomp插件实现开启全双工模式的WebSocket长连接；使用iview前端UI组件库创建优美的页面。
+                            该项目共包含用户管理、好友管理、实时聊天、消息管理、个人中心六个功能模块。
                             <br/><br/>
-                            项目架构：<br/>
-                            <br/><br/>
-                            主要负责内容：<br/>
-                            <br/>
-                            <br/>
-                            <br/>
+                            项目主要内容：<br/>
+                            1、用户注册：创建用户，获得能够标志一个用户所需的一些数据，比如登录名、昵称、密码、联系方式、电子邮箱<br/>
+                            2、用户登录：用户身份信息验证，根据登录的账户获取好友列表，消息等<br/>
+                            3、用户登出：清除Cookie、清除Token、关闭WebSocket连接<br/>
+                            4、添加好友：输入好友用户名（非登录名）并模糊比对，点击添加按钮即可给其发送添加好友的信息<br/>
+                            5、删除好友：点按好友列表中的好友的名字或者头像一秒以上，弹出是否确认删除的弹出框，点击删除即可删除好友<br/>
+                            6、实时聊天：直接在对话框中输入想要说的话，点击发送，所发消息会立即出现在对话框上方的显示区域中，若对方在线即可实时收到消息<br/>
+                            7、消息管理：储存用户的好友申请信息以及历史好友申请记录，用户可以选择同意或者不同意好友申请<br/>
+                            8、修改基本信息：可以修改注册时所填信息<br/>
+                            9、修改头像：支持用户自定义头像<br/>
                         </p>
                     </li>
                     <li>
                         <h3>京东帮物流智能排车App</h3>
                         <p>
-                            物流路径排序
-                            <br/>
-                            1、本人在项目中负责UE编写、Android前端、后台服务器和 软件测试等工作
-                            <br/>
-                            2、实现Excel上传以及数据导入
-                            <br/>
-                            3、通过高德地图API解析中文地址为高德经纬度值
-                            <br/>
-                            4、对数据库中的商品订单数据根据地址分类(城镇、乡村)
-                            <br/>
-                            5、对某一分类中的所有订单的地址进行自动最短路径规划并 返回一条最短路径的路径列表
-                            <br/>
-                            6、随时删除某一地址并自动重新排序
-                            <br/>
+                            物流路径排序<br/>
+                            1、本人在项目中负责UE编写、Android前端、后台服务器和 软件测试等工作<br/>
+                            2、实现Excel上传以及数据导入<br/>
+                            3、通过高德地图API解析中文地址为高德经纬度值<br/>
+                            4、对数据库中的商品订单数据根据地址分类(城镇、乡村)<br/>
+                            5、对某一分类中的所有订单的地址进行自动最短路径规划并 返回一条最短路径的路径列表<br/>
+                            6、随时删除某一地址并自动重新排序<br/>
                         </p>
                     </li>
                     <li>
-                        <h3>掌控淮师-移动智慧校园服务平台</h3>
+                        <h3>掌控淮师-移动智慧校园服务平台（计算机设计大赛获奖项目）</h3>
                         <p>
-                            掌控淮师-移动智慧校园服务平台
-                            <br/>
-                            1、本人在项目中负责界面设计开发，后台服务器开发等工作
-                            <br/>
-                            2、采用Material Design设计语言
-                            <br/>
-                            3、采用类似电影选座的形式选择自习座位
-                            <br/>
-                            4、通过对蓝牙信号强度的检测实现简单的室内定位
-                            <br/>
-                            5、通过蓝牙的扫描功能实现课堂实时点名功能
-                            <br/>
-                            掌控淮师-移动智慧校园服务平台是淮北师范大学学生基于Android开放平台自主开发，原创设计的一款致力于利用移动 平台的优势提高全校师生工作学习效率，简便生活方式的应 用。应用内包括自主报道系统，自习座位预约，活动教室申 请，教学楼室内定位，上课签到等简便学工教学流程的功能模 块和快递查询等生活服务模块。其中自习座位预约，活动教室 申请，教学楼室内定位为重点模块。自习座位预约功能模块可 以有效的解决广为诟病的大学生占座问题，只需点击座位预 约 扫描座位二维码确认两步即可。活动教室申请可以大大简 化教室申请流程，使得教室使用率得到最大化。
-                            <br/>
+                            掌控淮师-移动智慧校园服务平台<br/>
+                            1、本人在项目中负责界面设计开发，后台服务器开发等工作<br/>
+                            2、采用Material Design设计语言<br/>
+                            3、采用类似电影选座的形式选择自习座位<br/>
+                            4、通过对蓝牙信号强度的检测实现简单的室内定位<br/>
+                            5、通过蓝牙的扫描功能实现课堂实时点名功能<br/>
+                            掌控淮师-移动智慧校园服务平台是淮北师范大学学生基于Android开放平台自主开发，原创设计的一款致力于利用移动 平台的优势提高全校师生工作学习效率，简便生活方式的应 用。应用内包括自主报道系统，自习座位预约，活动教室申 请，教学楼室内定位，上课签到等简便学工教学流程的功能模 块和快递查询等生活服务模块。其中自习座位预约，活动教室 申请，教学楼室内定位为重点模块。自习座位预约功能模块可 以有效的解决广为诟病的大学生占座问题，只需点击座位预 约 扫描座位二维码确认两步即可。活动教室申请可以大大简 化教室申请流程，使得教室使用率得到最大化。<br/>
                         </p>
                     </li>
                 </ul>
